@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="stylesheet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <nav> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="hobbies.html">My Hobbies</a></li>
+                <li><a href="covidskiinginfrance.html">Covid-skiing in France</a></li>
+                <li><a href="bookmarkup.html">Book Chapter</a></li>
+                <li><a href="form.html">Contact</a></li>
+            </ul>
+            </nav>
+            <h1>Get in touch with me...</h1>
+        <div class="wrapper">
+            <section>
+            <form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST">
+            <input type="hidden" name="send_to" value="olivia_burney@yahoo.com">
+                <fieldset>
+                    <legend>Your contact information</legend>
+                        <label for="name">Your name</label>
+                            <input type="text" id="name" name="name">
+                        <label for="phone">Phone number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Don't forget your country code">
+                        <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                </fieldset>
+                <fieldset>
+                    <legend>Questions and comments</legend>
+                    <label for="comments">What would you like to ask me?</label>
+                        <textarea id="comments" name="comments" placeholder="Ask me anything!"></textarea>			
+                    <label>
+                        <input type="checkbox" value="subscribe" name="subscribe" checked>Add me to your email list!
+                    </label>
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>			
+            </section>
+            <aside>
+                <h3>Address</h3>
+                <address>
+                    Olivia Burney &middot;
+                    Chalet St Joseph &middot;
+                    Route Saint Jospeh&middot;
+                    Les Allues, 73550
+                </address>
+            <iframe
+     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.8134350667015!2d6.55260031507081!3d45.43326204352909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47897fdda6a5efad%3A0xf26f9aa1c268d71d!2sRoute%20Saint-Joseph%2C%2073550%20Les%20Allues%2C%20France!5e0!3m2!1sen!2suk!4v1613650340943!5m2!1sen!2suk" width="250" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </iframe>
+            </aside>
+        </div>
+        <script src="js/forms.js"></script>
+</body>
+</html>

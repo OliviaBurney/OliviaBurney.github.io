@@ -1,0 +1,248 @@
+/*My first solo attempt at css*/
+
+body {
+    font-family:'Benne', sans-serif;
+    color:#26131F;
+    line-height: 1.6rem;
+    margin: auto;
+    background-color: #F8BCA6;
+    width: 75%;
+    text-align: center;
+}
+
+nav {
+    border-bottom:  4px dotted #C05775;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+   font-family:Arial, Helvetica, sans-serif;
+  }
+
+  nav li {
+    border: 4px solid white;
+    flex-flow: row nowrap;
+    width: 10%;
+    background-color: #F68381;
+    margin: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    }
+    
+  nav a {
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border: pink solid 0x;
+    display: block;
+    padding: 0.5rem;
+    }
+  nav a:hover {
+    background-color:#00C9B7;
+    color:white;
+  }
+
+h1{
+    color:#C05775;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:2.5rem;
+    font-weight: bold;
+    border-bottom: 4px dotted #F68381;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+h2{
+    color: #355C7D;
+    font-size:1.5rem;
+    font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+    border-left: solid 5px #F68381;
+    text-align: left;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    
+}
+h3 {
+    color: #355C7D;
+    font-size:1rem;
+    font-family:Arial, Helvetica, sans-serif;
+    border-left: solid 4px #F68381;
+    padding-bottom: 0.5rem;
+    text-align: left;
+    padding-left: 1rem;
+
+}
+blockquote{
+    background-image: url(images/zigzag.jpg);
+    color:#C05775;
+    font-weight:bold;
+    margin: 0;
+    text-align: center;
+    display:inline-block;
+    padding: 1rem;
+    line-height: 1.5em;
+}
+ol{
+    list-style-type:lower-roman;
+    color:#C05775;
+    text-align: left;
+}
+
+ul {
+    text-align: left;
+    text-decoration: none;
+
+}
+footer {
+    color:#C05775;
+    font-size:0.75rem;
+    
+}
+a.reference:visited {
+color: black;
+font-size: 1rem;
+}
+a.reference:hover {
+color:black;
+font-weight:bold;
+text-decoration:none;
+
+}
+#myid {
+    text-transform:uppercase;
+    font-weight:bold;
+    color:grey;
+}
+.introduction {
+    font-size:1.1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.2rem;
+}
+
+div:not(.wrapper) {
+ flex-basis:33%;
+ border-right: #C05775 4px dotted;
+ text-align: left;
+ margin-right: 1.5rem;
+ padding-right: 1rem;
+}
+.floatright {
+    float: right;
+    margin: 0 0 1rem 1rem;
+    clear: left;
+}
+
+.floatleft {
+    float: left;
+    margin: 0 0.5rem 0 0;
+    clear:right;
+}
+
+article:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.links {
+    font-weight: bold;
+    text-decoration: none;
+}
+.links:visited {
+    text-decoration: none;
+    color: #C05775;
+}
+.links:hover {
+    text-decoration: none;
+    color: white;
+}
+img {
+border-radius: 10px;
+}
+.wrapper{	
+    color: #26131F;
+	margin: 0 auto;
+    text-align: left;
+	padding: 1em;
+	display: flex;
+	flex-flow: row nowrap;
+	background-image: url(images/zigzag.jpg);
+    font-family:'Benne', sans-serif;
+    font-size:1.2rem;
+}
+
+section {
+	flex-basis: 80%;
+    margin-right: 10%;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    }
+
+p, [for="abtype"], [for="comments"] {
+	margin: 1rem 0 1rem 0;
+}
+
+fieldset{
+	border: 1px solid #26131F;
+	border-radius: 10px;
+	margin-bottom: 2rem;
+}
+
+legend {
+	font-weight:bold;
+	font-size: 1.2rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	display: block;
+}
+label{
+	border: 0px blue solid;
+	display: block;
+	padding:0.3rem;
+}
+
+textarea {
+	height: 10rem;
+	width: 30rem;
+	padding: 1rem;
+}
+select {
+	font-size:1rem;
+	border-radius: 10px;
+	border:#26131F solid 1px;
+	font-family:'Benne', sans-serif;
+}
+button {
+	font-size:1.2rem;
+	font-weight:bold;
+	margin: 1.5rem 0;
+	background-color: #bb324f;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+}
+button:hover {
+	background-color: white;
+	color: #bb324f;
+	font-weight:bold;
+}
+input:not([type="checkbox"]), textarea{
+display:block;
+margin-bottom:2rem;
+width: 20rem;
+font-family:'Benne', sans-serif;
+font-size: 1rem;
+padding: 0 1rem;
+border-radius:10px;
+border:#26131F solid 1px;
+}
+aside {
+text-align:center;
+color:#26131F;
+}
